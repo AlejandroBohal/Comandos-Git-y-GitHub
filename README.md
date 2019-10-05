@@ -131,9 +131,9 @@ Toma algunos archivos y los coloca en un área temporal, que después puedo agre
 ![rebase](https://github.com/sebastianfrasic/Comandos-Git-y-GitHub/blob/master/Imagenes/rebase4.jpg)
 
 * **Unir dos commits:**  
-git rebase -i HEAD~_#DeCommitsQueQuieroUnir_  
+git rebase -i HEAD~#DeCommitsQueQuieroUnir  
 Luego, en el editor VI, en lugar de “pick” colocar “s” o “squash”. Y cambiar lo que sea necesario.
 
 * **Cambiar el nombre a un commit:**  
-git rebase -i HEAD~_#DeCommitsQueQuieroUnir_  
+git rebase -i HEAD~#DeCommitsQueQuieroUnir  
 Luego, en el editor VI, en lugar de “pick” colocar “r” o “reword”. Y cambiar lo que sea necesario.
