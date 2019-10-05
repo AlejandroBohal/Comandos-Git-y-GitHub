@@ -31,7 +31,7 @@ git add -A
 git reset *.xml
 
 * **Otros comandos importantes:** 
-![1](https://github.com/sebastianfrasic/Comandos-Git-y-GitHub/blob/master/JuanFrasica/Imagenes/1.jpg)
+![1](https://github.com/sebastianfrasic/Comandos-Git-y-GitHub/blob/master/Imagenes/1.jpg)
 
 * **Configurar un alias para git log con detalles:** git config --global alias.lg "log --oneline --decorate --all --graph"
 
