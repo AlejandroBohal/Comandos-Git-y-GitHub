@@ -30,7 +30,8 @@
 git add -A  
 git reset *.xml
 
-## Otros comandos importantes
+* **Otros comandos importantes:** 
+![1](https://github.com/sebastianfrasic/Comandos-Git-y-GitHub/blob/master/JuanFrasica/Imagenes/1.jpg)
 
 * **Configurar un alias para git log con detalles:** git config --global alias.lg "log --oneline --decorate --all --graph"
 
@@ -58,50 +59,46 @@ git reset *.xml
 
 * **Eliminar un archivo:** git rm _nombreDelArchivo_
 
-Modificar archivos fuera de git:
-•	Actualizar y agregar cambios:
+### Modificar archivos fuera de git
+
+* **Actualizar y agregar cambios:**  
 git add -u
 git add -A
 git commit -m “El mensaje aca”
 
-Ramas:
- 
+## Ramas
 
+### Fast-Forward
 
+* **Crear nueva rama:** git branch _NombreDeLaRama_
 
-Merge/Uniones:
-Fast-Forward:
-•	Crear nueva rama:
-git branch NombreDeLaRama
+* **Cambiarse de rama:** git checkout _NombreDeLaRama_
 
-•	Cambiarse de rama:
-git checkout NombreDeLaRama
+* **Comparar cambios entre ramas:** git diff _Rama1_ _Rama2_
 
-•	Comparar cambios entre ramas:
-git diff Rama1 Rama2
+* **Unir una rama con la rama master: (Se debe estar en la rama master)** git merge _NombreDeLaRama_
 
-•	Unir una rama con la rama master: (Se debe estar en la rama master)
-git merge NombreDeLaRama
+* **Eliminar una rama: (Es buena práctica eliminar la rama después de un merge)** git branch -d _NombreDeLaRama_
 
-•	Eliminar una rama: (Es buena práctica eliminar la rama después de un merge)
-git branch -d NombreDeLaRama
+#### Unión automática
 
-Unión automática:
-•	Crear y moverse a una nueva rama:
-git checkout -b NombreDeLaRama
+* **Crear y moverse a una nueva rama:** git checkout -b _NombreDeLaRama_
 
+#### Ramas con Github
 
-Tags:
-•	Crear nuevo tag:
-git tag NombreDelTag
-ó   git tag -a TagID -m "Mensaje del Tag"
-•	Eliminar un tag:
-git tag -d TagID
+* **Eliminar ramas remotas:** git push origin :_rama-a-eliminar_
 
+* **Limpiar ramas en Github:** git remote prune origin
 
+## Tags
 
-Stash: Toma algunos archivos y los coloca en un área temporal, que después puedo agregar/quitar de mi proyecto. (Solo se usa en casos de emergencia).
- 
+* **Crear nuevo tag:** git tag _NombreDelTag_   ó   git tag -a _TagID_ -m "_Mensaje del Tag_"
+
+* **Eliminar un tag:** git tag -d _TagID_
+
+* **Subir todos los tags a Github:** git push –tags
+
+## Stash: Toma algunos archivos y los coloca en un área temporal, que después puedo agregar/quitar de mi proyecto. (Solo se usa en casos de emergencia)
 
 •	Crear nuevo Stash (Se agrega a la pila de Stashes):
 git stash 
@@ -135,16 +132,3 @@ Luego, en el editor VI, en lugar de “pick” colocar “s” o “squash”. Y
 •	Cambiar el nombre a un commit:
 git rebase -i HEAD~#DeCommitsQueQuieroUnit
 Luego, en el editor VI, en lugar de “pick” colocar “r” o “reword”. Y cambiar lo que sea necesario.
-
-
- 
-GitHub:
-•	Subir todos los tags a Github:
-git push –tags
-
-•	Eliminar ramas remotas:
-git push origin :rama-a-eliminar
-
-•	Limpiar ramas en Github:
-git remote prune origin
-
