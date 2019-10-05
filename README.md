@@ -6,9 +6,9 @@
 
 * **Ver historial de commits:** git log
 
-* **Configurar nombre de usuario:** git config --global user.name "__El nombre aca__"
+* **Configurar nombre de usuario:** git config --global user.name "_El nombre aca_"
 
-* **Configurar email de usuario:** git config --global user.email "__El email aca__"
+* **Configurar email de usuario:** git config --global user.email "_El email aca_"
 
 * **Restaurar la última versión de un archivo:** git checkout -- .
 
@@ -16,7 +16,7 @@
 
 * **Subir al “escenario” todos los archivos:** git add .
 
-* **Tomar una fotografía al “escenario”:** git commit -m “__El mensaje aca__”
+* **Tomar una fotografía al “escenario”:** git commit -m “_El mensaje aca_”
 
 * **Crear comando simplificado de git status:** git config --global alias.s "status -s -b"
 
@@ -46,17 +46,17 @@ git reset *.xml
 
 ## Comandos para viajar en el tiempo
 
-* **Devolverse a un commit sin borrar todo:** git reset –mixed __HashDelCommit__
+* **Devolverse a un commit sin borrar todo:** git reset –mixed _HashDelCommit_
 
-* **Devolverse a un commit borrando todo:** git reset –hard __HashDelCommit__
+* **Devolverse a un commit borrando todo:** git reset –hard _HashDelCommit_
 
 * **Ver todos los registros hechos en el repositorio:** git reflog
 
 ### Modificar archivos mediante git
 
-* **Cambiar el nombre de un archivo:** git mv __nombreAntiguo__ __nombreNuevo__
+* **Cambiar el nombre de un archivo:** git mv _nombreAntiguo_ _nombreNuevo_
 
-* **Eliminar un archivo:** git rm __nombreDelArchivo__
+* **Eliminar un archivo:** git rm _nombreDelArchivo_
 
 Modificar archivos fuera de git:
 •	Actualizar y agregar cambios:
