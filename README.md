@@ -68,6 +68,8 @@ git commit -m “El mensaje aca”
 
 ## Ramas
 
+![2](https://github.com/sebastianfrasic/Comandos-Git-y-GitHub/blob/master/Imagenes/2.jpg)
+
 ### Fast-Forward
 
 * **Crear nueva rama:** git branch _NombreDeLaRama_
@@ -80,11 +82,11 @@ git commit -m “El mensaje aca”
 
 * **Eliminar una rama: (Es buena práctica eliminar la rama después de un merge)** git branch -d _NombreDeLaRama_
 
-#### Unión automática
+### Unión automática
 
 * **Crear y moverse a una nueva rama:** git checkout -b _NombreDeLaRama_
 
-#### Ramas con Github
+### Ramas con Github
 
 * **Eliminar ramas remotas:** git push origin :_rama-a-eliminar_
 
@@ -98,37 +100,40 @@ git commit -m “El mensaje aca”
 
 * **Subir todos los tags a Github:** git push –tags
 
-## Stash: Toma algunos archivos y los coloca en un área temporal, que después puedo agregar/quitar de mi proyecto. (Solo se usa en casos de emergencia)
+## Stash
 
-•	Crear nuevo Stash (Se agrega a la pila de Stashes):
-git stash 
-•	Eliminar un tag:
-git stash list
-•	Eliminar último elemento de la pila de Stashes:
-git stash pop
-•	Eliminar todas las entradas en el Stash:
-git stash clear
-•	Insertar mensajes en un Stash:
-git stash save “Mensaje aca”
+Toma algunos archivos y los coloca en un área temporal, que después puedo agregar/quitar de mi proyecto. (Solo se usa en casos de emergencia)
 
- 
+![stash](https://github.com/sebastianfrasic/Comandos-Git-y-GitHub/blob/master/Imagenes/stash.jpg)
 
+* **Crear nuevo Stash (Se agrega a la pila de Stashes):** git stash
 
+* **Eliminar un tag:** git stash list
 
-Rebase:
- 
+* **Eliminar último elemento de la pila de Stashes:** git stash pop
 
+* **Eliminar todas las entradas en el Stash:** git stash clear
 
-¿Qué hace el Rebase?
- 
+* **Insertar mensajes en un Stash:** git stash save “_Mensaje aca_”
 
-  
- 
+![stash2](https://github.com/sebastianfrasic/Comandos-Git-y-GitHub/blob/master/Imagenes/stash2.jpg)
 
-•	Unir dos commits:
-git rebase -i HEAD~#DeCommitsQueQuieroUnit
+## Rebase
+
+![rebase](https://github.com/sebastianfrasic/Comandos-Git-y-GitHub/blob/master/Imagenes/rebase.jpg)
+
+### ¿Qué hace el Rebase?
+
+![rebase](https://github.com/sebastianfrasic/Comandos-Git-y-GitHub/blob/master/Imagenes/rebase2.jpg)
+
+![rebase](https://github.com/sebastianfrasic/Comandos-Git-y-GitHub/blob/master/Imagenes/rebase3.jpg)
+
+![rebase](https://github.com/sebastianfrasic/Comandos-Git-y-GitHub/blob/master/Imagenes/rebase4.jpg)
+
+* **Unir dos commits:**  
+git rebase -i HEAD~_#DeCommitsQueQuieroUnir_
 Luego, en el editor VI, en lugar de “pick” colocar “s” o “squash”. Y cambiar lo que sea necesario.
 
-•	Cambiar el nombre a un commit:
-git rebase -i HEAD~#DeCommitsQueQuieroUnit
+* **Cambiar el nombre a un commit:**  
+git rebase -i HEAD~_#DeCommitsQueQuieroUnit_
 Luego, en el editor VI, en lugar de “pick” colocar “r” o “reword”. Y cambiar lo que sea necesario.
